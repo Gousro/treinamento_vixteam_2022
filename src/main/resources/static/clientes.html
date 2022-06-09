@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>HTML Exemplo</title>
+    <style>
+      .card-f {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      }
+      footer > p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="card mt-5 mx-auto" style="width: 20rem">
+        <div class="card-body">
+          <h5 class="card-title">Busca de clientes</h5>
+          <form>
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="fnameId" class="col-form-label">Nome:</label>
+              </div>
+              <div class="col-auto">
+                <input
+                  type="text"
+                  id="fnameId"
+                  name="fname"
+                  class="form-control"
+                  placeholder="Ex.: Rodrigo"
+                />
+              </div>
+              <div class="card-f">
+                <div class="col-auto">
+                  <small id="searchResult"></small>
+                </div>
+                <div class="col-auto">
+                  <input type="button" class="btn btn-primary" value="Pesquisar" onclick="searchClient()" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Frontend - Primeira busca - Treinamento Vixteam 2022</p>
+    </footer>
+    <script type="text/javascript" src="./spa-ajax.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
